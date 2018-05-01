@@ -31,5 +31,7 @@ The package comprises three main functions:
 
 ## Installation
 
+'''
 install.packages("devtools")
 devtools::install_github("benkon17/circreg")
+'''
