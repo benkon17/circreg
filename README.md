@@ -4,6 +4,7 @@ output:
     variant: markdown_github
 ---
 # circreg
+
 This R package produces a multiple linear regression model based on bibliographic and circulation information for non-fiction monographs in a public library system (or one that uses Dewey Decimal Classification). It assumes that an item's frequency of circulation (in charges per year) is linearly correlated with its price, time within the library system, and reading level (approximated by number of pages). Please note that these assumptions have not been thoroughly tested and the applicability of such a model may vary from library to library.
 ---
 
