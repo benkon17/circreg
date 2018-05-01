@@ -11,7 +11,7 @@ Description: Accepts a data frame containing bibliographic data for non-fiction 
     Computes and outputs a multiple regression with circulation frequency as the dependent variable and number of pages, price, and years in collection as independent variables.
 Depends: R (>= 3.4.3)
 Imports: ggplot2, stringr, eeptools
-License: CC0
+License: MIT License
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
