@@ -20,5 +20,5 @@
 #' @export
 
 deweygraph <- function(librarydata){
-  ggplot2::ggplot(librarydata, aes(librarydata$CALLNUM)) + ggplot2::scale_x_continuous(breaks = seq(0,1000,by=100), minor_breaks = NULL) + ggplot2::xlab("Dewey Section") + ggplot2::ylab("Charges") + ggplot2::stat_summary_bin(aes(y = CHARGES),color = "black", fill = "blue", fun.y = "sum", geom = "bar", bins = 10)
+  ggplot2::ggplot(librarydata, ggplot2::aes(librarydata$CALLNUM)) + ggplot2::scale_x_continuous(breaks = seq(0,1000,by=100), minor_breaks = NULL) + ggplot2::xlab("Dewey Section") + ggplot2::ylab("Charges") + ggplot2::stat_summary_bin(ggplot2::aes(y = CHARGES),color = "black", fill = "blue", fun.y = "sum", geom = "bar", bins = 10)
 }
