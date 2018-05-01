@@ -1,0 +1,17 @@
+Package: circreg
+Type: Package
+Title: Calculate Multiple Regression for Library Circulation Data
+Version: 1.0.0
+Author: Benjamin Kon
+Author@R: person("Benjamin", "Kon", email = "benjaminkon@mail.usf.edu", role = c("aut", "cre"))
+Description: Accepts a data frame containing bibliographic data for non-fiction works cataloged by Dewey Decimal Classification with the following minimum attributes: CALLNUM, CHARGES, PAGES, PRICE, and CREATED.
+    Prepares raw data by extracting numeric values for Dewey Decimal Classification, number of pages, and price, then removes items with invalid entries for these attributes.
+    Sub-divides call numbers and outputs a bar graph showing total aggregate circulation for broad non-fiction categories.
+    Calculates circulation frequency of each item as the number of charges per year since the date of creation.
+    Computes and outputs a multiple regression with circulation frequency as the dependent variable and number of pages, price, and years in collection as independent variables.
+Depends: R (>= 3.4.3)
+Imports: ggplot2, stringr, eeptools
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
